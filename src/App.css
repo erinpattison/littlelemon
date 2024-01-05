@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Markazi+Text:wght@400;500;600;700&display=swap');
-
+:root{
+  --primary-1: #495e57;
+  --primary-2: #f4ce15;
+  --sec-1: #ee9972;
+  --sec-2: #fbdabb;
+  --high-1: #edefee;
+  --high-2: #333333;
+}
 *{
   margin: 0;
   padding: 0;
@@ -15,22 +22,22 @@ body{
 .display-title{
   font-family: 'Markazi Text', serif;
   font-weight: 500;
-  font-size: 64px;
+  font-size: 64pt;
 }
 .sub-title{
   font-family: 'Markazi Text', serif;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 40pt;
 }
 .lead-text{
   font-family: 'Karla', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 18pt;
 }
 .section-title{
   font-family: 'Karla', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 20pt;
 }
 .section-categories{
   font-family: 'Karla', sans-serif;
@@ -55,10 +62,9 @@ p{
 nav{
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
-  padding: 1rem;
+  padding: 1rem 35rem;
 }
 nav img{
   height: 50px;
@@ -66,6 +72,109 @@ nav img{
 .navlinks{
   list-style: none;
   display: flex;
-  width: 50%;
+  width: 75%;
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: var(--primary-1);
+}
+/* hero */
+.hero{
+  height: 600px;
+  padding: 1rem 35rem;
+  background-color: var(--primary-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero h1{
+  color: var(--primary-2);
+  line-height: 64px;
+}
+.hero h2{
+  color: var(--high-1);
+  line-height: 40px;
+}
+.hero p {
+  max-width: 32ch;
+  color: var(--high-1);
+}
+
+.homepageButton{
+  padding: 8px 16px;
+  color: var(--high-2);
+  font-weight: 700;
+  background-color: var(--primary-2);
+  border: none;
+  border-radius: 8px;
+  max-width: 200px;
+}
+
+.hero .left{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  max-width: 35%;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.hero .right img {
+  max-width: 550px;
+  border-radius: 8px;
+}
+
+.specials{
+  padding: 1rem 35rem;
+}
+
+.specials header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuCard{
+  width: 300px;
+  height: 440px;
+  background-color: var(--high-1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menuCard img{
+  width: 100%;
+  max-height: 200px;
+}
+.menuCard-content{
+  height: 240px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menuCard header{
+  display: flex;
+  justify-content: space-between;
+}
+.price{
+  color: var(--sec-1);
+}
+
+.menuCard button{
+  max-width: 55%;
+  padding: 8px 16px;
+  font-weight: 700;
+  background-color: var(--primary-2);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.specialItems{
+  display: flex;
   justify-content: space-between;
 }
