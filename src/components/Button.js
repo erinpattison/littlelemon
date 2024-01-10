@@ -1,6 +1,6 @@
 export const Button = (props) => {
     return(
-        <button class="homepageButton">
+        <button className="homepageButton">
             {props.label}
         </button>
     )
